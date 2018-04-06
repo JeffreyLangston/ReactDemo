@@ -1,0 +1,27 @@
+{
+	// Place your settings in this file to overwrite the default settings
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"editor.renderIndentGuides": false,
+	"javascript.format.enable": false,
+	"javascript.validate.enable": false,
+	"eslint.autoFixOnSave": true,
+	"eslint.alwaysShowStatus": true,
+	"[javascript]": {
+		"editor.formatOnSave": false
+	},
+	"git.autofetch": true,
+	"workbench.colorTheme": "Cobalt2",
+	"workbench.iconTheme": "material-icon-theme",
+	"typescript.format.enable": false,
+	"files.eol": "\n",
+	"editor.detectIndentation": false,
+	"files.associations": {
+		"*.js": "javascriptreact",
+		"*.jsx": "javascriptreact"
+	},
+	"emmet.syntaxProfiles": {
+		"javascript": "jsx"
+	}
+}
