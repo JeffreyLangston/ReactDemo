@@ -2,8 +2,8 @@ import React from "react";
 
 
 class AddFishForm extends React.Component {
-	nameRef = React.creatRef();
-	priceRef = React.creatRef();
+	nameRef = React.createRef();
+	priceRef = React.createRef();
 	statusRef = React.createRef();
 	descRef = React.createRef();
 	imageRef = React.createRef();
@@ -11,13 +11,13 @@ class AddFishForm extends React.Component {
 	createFish = (event) =>{
 		event.preventDefault();
 		const fish={
-			image: this.image.value.value,
-			name: this.name.value.value,
-			price: parseFloat(this.price.value.value),
-			status: this.status.value.value,
-			desc: this.desc.value.value
+			image: this.imageRef.value.value,
+			name: this.nameRef.value.value,
+			price: parseFloat(this.priceRef.value.value),
+			status: this.statusRef.value.value,
+			desc: this.descRef.value.value
 		};
-
+		this.props.addFish(fish);
 	}
 
 	render(){
