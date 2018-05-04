@@ -99,7 +99,7 @@ deleteFish = (key) => {
 					</ul>
 				</div>
 				<Order removeFromOrder={this.removeFromOrder} fishes={this.state.fishes} order={this.state.order} />
-				<Inventory loadSampleFishes={this.loadSampleFishes} updateFish={this.updateFish} deleteFish={this.deleteFish} addFish={this.addFish} fishes={this.state.fishes} />
+				<Inventory loadSampleFishes={this.loadSampleFishes} updateFish={this.updateFish} storeId={this.props.match.params.storeId} deleteFish={this.deleteFish} addFish={this.addFish} fishes={this.state.fishes} />
 			</div>
 		);
 	}
